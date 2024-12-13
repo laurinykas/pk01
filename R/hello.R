@@ -19,3 +19,9 @@ hello <- function() {
 #test 1
 
 #hello.r
+
+
+hello_erin <- function() {
+  print("Hello")
+}
+hello_erin()
