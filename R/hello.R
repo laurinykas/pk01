@@ -25,3 +25,31 @@ hello_erin <- function() {
   print("Hello")
 }
 hello_erin()
+
+
+##function to remove missing values
+
+remove_missing <- function(data) {
+  if (!is.data.frame(data)) {
+    stop("Input must be a data frame")
+  }
+  tidied_data <- na.omit(data)
+  return(tidied_data)
+}
+
+remove_missing(data)
+
+
+
+##code to replace spaces in variable names to underscores
+
+clean_column_names <- function(data) {
+
+  if (!is.data.frame(data)) {
+    stop("Input must be a data frame")
+  }
+  data %>%
+    rename_with(~ gsub(" ", "_", .x))
+}
+
+clean_column_names(data)
