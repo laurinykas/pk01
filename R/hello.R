@@ -9,7 +9,7 @@ library(dplyr)
 
 data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.csv")
 
-
+utils::globalVariables(c("x", "y", "SPAD", "chlorophyll"))
 
 ## Function 1
 tidy_data <- function(data) {
@@ -37,7 +37,6 @@ load_data(cleaned_Data)
 
 
 
-
 ##Function 3
 
 plot.tidy_data <- function(object, x, y, ...) {
@@ -52,4 +51,7 @@ plot.tidy_data <- function(object, x, y, ...) {
 
 plot.tidy_data(cleaned_Data, "SPAD", "chlorophyll")
 
+
 devtools::check()
+
+
