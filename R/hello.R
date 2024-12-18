@@ -21,17 +21,14 @@ hello <- function() {
 #hello.r
 
 
-
-
-
-
-
 library(readr)
 library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
 data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.csv")
+
+
 
 
 
@@ -54,6 +51,7 @@ cleaned_Data <-tidy_data(data)
 usethis::use_data(cleaned_Data, compress="xz",overwrite = TRUE)
 
 
+
 ##Function 3
 
 plot.tidy_data <- function(object, x, y, ...) {
@@ -67,4 +65,6 @@ plot.tidy_data <- function(object, x, y, ...) {
 }
 
 plot.tidy_data(cleaned_Data, "chlorophyll", "SPAD")
+
+
 
