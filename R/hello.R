@@ -1,26 +1,7 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   https://r-pkgs.org
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
-
-hello <- function() {
-  print("Hello, world!")
-}
-#test 1
-
-#hello.r
-
-
+library(devtools)
+library(pkgbuild)
+has_devel()
+check_build_tools()
 library(readr)
 library(ggplot2)
 library(tidyverse)
@@ -57,7 +38,6 @@ load_data(cleaned_Data)
 
 
 
-
 ##Function 3
 
 plot.tidy_data <- function(object, x, y, ...) {
@@ -70,4 +50,6 @@ plot.tidy_data <- function(object, x, y, ...) {
     labs(title = "Tidy Data Plot")
 }
 
-plot.tidy_data(cleaned_Data, "chlorophyll", "SPAD")
+plot.tidy_data(cleaned_Data, "SPAD", "chlorophyll")
+
+devtools::check()
