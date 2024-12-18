@@ -46,7 +46,15 @@ cleaned_Data <-tidy_data(data)
 
 ## Function 2
 
-usethis::use_data(cleaned_Data, compress="xz",overwrite = TRUE)
+load_data <- function(data){
+
+  usethis::use_data(data, compress="xz",overwrite = TRUE)
+
+}
+
+load_data(cleaned_Data)
+
+
 
 
 
