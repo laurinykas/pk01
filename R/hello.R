@@ -51,7 +51,6 @@ plot.tidy_data <- function(object, x, y, ...) {
 
 plot.tidy_data(cleaned_Data, "SPAD", "chlorophyll")
 
-
 devtools::check()
 
 
