@@ -8,6 +8,7 @@ data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.
 
 
 
+
 ## Function 1
 tidy_data <- function(data) {
   if (!is.data.frame(data)) {
@@ -25,6 +26,7 @@ cleaned_Data <-tidy_data(data)
 ## Function 2
 
 usethis::use_data(cleaned_Data, compress="xz",overwrite = TRUE)
+
 
 
 ##Function 3
