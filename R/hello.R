@@ -26,8 +26,8 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
-data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.csv")
-
+data <- read_csv("~/pk01/R/Advanced r programming dataset(in).csv")
+data
 
 
 ## Function 1
