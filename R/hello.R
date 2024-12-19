@@ -7,9 +7,10 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
+
 data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.csv")
 
-utils::globalVariables(c("x", "y", "SPAD", "chlorophyll"))
+utils::globalVariables(c("x", "y", "SPAD", "chlorophyll", "stomatal", "leaf thickness","Leaf number","Tree ID", "Pot ID", "Culture", "Temperature"))
 
 ## Function 1
 tidy_data <- function(data) {
