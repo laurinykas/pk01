@@ -7,6 +7,11 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
+<<<<<<< HEAD
+=======
+data <- read_csv("~/pk01/R/Advanced r programming dataset(in).csv")
+data
+>>>>>>> f846e922c488dda0be5bf0d9f4ebe46f1ac77b36
 
 data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.csv")
 
@@ -53,5 +58,5 @@ plot.tidy_data <- function(object, x, y, ...) {
 plot.tidy_data(cleaned_Data, "SPAD", "chlorophyll")
 
 devtools::check()
-
+usethis::use_gpl_license()
 
