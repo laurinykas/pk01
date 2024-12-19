@@ -7,10 +7,17 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
+<<<<<<< HEAD
+=======
 data <- read_csv("~/pk01/R/Advanced r programming dataset(in).csv")
+<<<<<<< HEAD
+=======
+data
+>>>>>>> f846e922c488dda0be5bf0d9f4ebe46f1ac77b36
+>>>>>>> 56be6acbb748f86f701bb5312889e83251cefa18
 
 
-utils::globalVariables(c("x", "y", "SPAD", "chlorophyll"))
+utils::globalVariables(c("x", "y", "SPAD", "chlorophyll", "stomatal", "leaf thickness","Leaf number","Tree ID", "Pot ID", "Culture", "Temperature"))
 
 ## Function 1 : Making column names the same and removing any NA values
 
