@@ -8,9 +8,7 @@ library(tidyverse)
 library(dplyr)
 
 data <- read_csv("~/pk01/R/Advanced r programming dataset(in).csv")
-data
 
-data <- read_csv("~/R programming project/pk01/R/Advanced r programming dataset.csv")
 
 utils::globalVariables(c("x", "y", "SPAD", "chlorophyll"))
 
