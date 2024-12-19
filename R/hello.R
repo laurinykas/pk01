@@ -13,18 +13,24 @@ data <- read_csv("~/pk01/R/Advanced r programming dataset(in).csv")
 utils::globalVariables(c("x", "y", "SPAD", "chlorophyll"))
 
 ## Function 1
+
 tidy_data <- function(data) {
   if (!is.data.frame(data)) {
     stop("Input must be a data frame")
   }
   tidied_data <- data %>%
     na.omit(data)%>%
-    rename_with(~ gsub(" ", "_", .x))
+    janitor::clean_names(case = "snake") ## changes all column names to snake_case (lowercase and spaces replaces with)
 
   return(tidied_data)
 }
 
+
 cleaned_Data <-tidy_data(data)
+
+
+
+
 
 ## Function 2
 
